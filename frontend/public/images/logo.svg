@@ -1,0 +1,69 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle background -->
+  <circle cx="200" cy="200" r="190" fill="#1a1a2e"/>
+  
+  <!-- Border rings -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="#e94560" stroke-width="3"/>
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#0f3460" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Motion lines suggesting speed -->
+  <g transform="translate(200, 200)">
+    <path d="M -90 -45 L -65 -45" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M -85 -30 L -55 -30" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M -90 -15 L -50 -15" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+    <path d="M -85 0 L -55 0" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M -90 15 L -65 15" stroke="#e94560" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Stylized V shape -->
+    <path d="M -45 -50 L 0 35 L 45 -50" 
+          fill="none" 
+          stroke="#e94560" 
+          stroke-width="10" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Inner V accent -->
+    <path d="M -36 -42 L 0 20 L 36 -42" 
+          fill="none" 
+          stroke="#16213e" 
+          stroke-width="5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Accent circle around V -->
+    <circle cx="0" cy="-8" r="60" 
+            fill="none" 
+            stroke="#0f3460" 
+            stroke-width="2" 
+            opacity="0.4"/>
+  </g>
+  
+  <!-- Text: VELOCITY (curved along top) -->
+  <path id="topCurve" d="M 80,200 A 120,120 0 0,1 320,200" fill="none"/>
+  <text font-family="Arial, sans-serif" 
+        font-size="28" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        letter-spacing="4">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
+      VELOCITY
+    </textPath>
+  </text>
+  
+  <!-- Text: AUTO GROUP (curved along bottom) -->
+  <path id="bottomCurve" d="M 100,270 A 140,140 0 0,0 300,270" fill="none"/>
+  <text font-family="Arial, sans-serif" 
+        font-size="16" 
+        font-weight="normal" 
+        fill="#e94560" 
+        letter-spacing="5">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      AUTO GROUP
+    </textPath>
+  </text>
+  
+  <!-- Bottom decorative dots -->
+  <circle cx="200" cy="310" r="2" fill="#e94560"/>
+  <circle cx="190" cy="312" r="1.5" fill="#e94560" opacity="0.6"/>
+  <circle cx="210" cy="312" r="1.5" fill="#e94560" opacity="0.6"/>
+</svg>
