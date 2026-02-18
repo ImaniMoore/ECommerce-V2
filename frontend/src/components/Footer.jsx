@@ -22,7 +22,12 @@ export const Footer = () => {
           <Link to="/contact">Financing</Link>
           <Link to="/contact">Contact</Link>
         </nav>
-
+        <a href="https://www.instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
         <p className="footer-copy">© 2026 Velocity Auto Group</p>
       </div>
     </footer>
