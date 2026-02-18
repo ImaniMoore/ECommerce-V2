@@ -17,7 +17,6 @@ export const Product = () => {
   const [search, setSearch] = useState("");
   const [activeType, setActiveType] = useState("All");
   const [sort, setSort] = useState("default");
-  const [maxPrice, setMaxPrice] = useState(200000);
 
   useEffect(() => {
     fetch("/api/products")
@@ -50,8 +49,6 @@ export const Product = () => {
       list = list.filter((p) => p.type === activeType);
     }
 
-    list = list.filter((p) => p.price <= maxPrice);
-
     switch (sort) {
       case "price-asc":
         list.sort((a, b) => a.price - b.price);
@@ -74,7 +71,7 @@ export const Product = () => {
     }
 
     return list;
-  }, [products, search, activeType, sort, maxPrice]);
+  }, [products, search, activeType, sort]);
 
   return (
     <main className="inventory-page">
@@ -172,7 +169,6 @@ export const Product = () => {
                 setSearch("");
                 setActiveType("All");
                 setSort("default");
-                setMaxPrice(200000);
               }}
             >
               Reset Filters
