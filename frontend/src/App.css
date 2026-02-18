@@ -22,7 +22,6 @@
   --fb: "Barlow", sans-serif;
 }
 
-/* ── RESET ── */
 *,
 *::before,
 *::after {
@@ -49,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-/* ── UTILITIES ── */
+
 .container {
   width: 90%;
   max-width: 1200px;
